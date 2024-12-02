@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/801983a8a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Bsc.(Hons)Undergraduate at <br>SLTC Research University</p>
+            <h1>Hi,I'm <span>Lashan</span><br> from Sri Lanka </h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/WhatsApp Image 2024-12-02 at 16.02.03_dbe8e051.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m Lashan Dias, a passionate software engineering student at SLTC Research University. 
+                    I’m deeply focused on building my skills in programming, software development, and technology. 
+                    Alongside my studies, I work as a class coordinator at TeamICT, where I organize academic activities, 
+                    support my peers, and help facilitate smooth communication between students and faculty. 
+                    This role has been invaluable in helping me develop leadership and project management skills, and 
+                    I’m excited to apply this experience as I work toward a career in software engineering.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/app Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building IOS/Android Apps</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Designer at D.B.Online 
+                        Store</li>
+                        <li><span>2019 - 2021</span><br>Team leader at D.B. Online Store</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Ordinary Level</li>
+                        <li><span>2023</span><br>Advanced Level</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ----------services-------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Designing responsive, user-friendly websites that enhance client brands and engage audiences. </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Crafting intuitive UI/UX designs that prioritize user experience and seamless interaction. </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>Creating sleek, user-focused app designs for seamless and engaging mobile experiences.h </p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+ </div>
+ <!-- ----------portfolio------------ -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Designed the Zutto app with a clean, intuitive interface for seamless user engagement and easy navigation. </p>
+                    <div class="circle">
+                        <i class="icon"><a href="#"><i class="fa-solid fa-up-right-from-square"></i></a></i> <!-- Replace with your icon -->
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Created the Joji Music app with a sleek, user-friendly design, offering smooth navigation and an immersive listening experience. </p>
+                    <div class="circle">
+                        <i class="icon"><a href="#"><i class="fa-solid fa-up-right-from-square"></i></a></i> <!-- Replace with your icon -->
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Designed a modern furniture online shopping app with a clean, intuitive interface, making browsing and purchasing seamless and enjoyable.</p>
+                    <div class="circle">
+                        <i class="icon"><a href="#"><i class="fa-solid fa-up-right-from-square"></i></a></i> <!-- Replace with your icon -->
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>    
+
+<!-- --------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>matheeshasathmin2@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>0755394461</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/matheesha.sathmin.9?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_mathee.sha_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/matheesha-sathmin-b487b1315?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbICaQpoyRfKNQTFU2rf4bQ%3D%3D">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/hello.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+          
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © lashan.Made With <i class="fa-solid fa-heart"> </i> by easy tutorials</p>
+    </div>  
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzLKziyEH5XpZhcJGQZbnom6g0nqCvjjTBTnMHx_OJFCnoNtr0Y0_DnjbnM5LhuiPCy/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+    
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
